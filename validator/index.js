@@ -10,7 +10,8 @@ const checkNextWord = async(word)=>{
         });
         
     })
-    var x1= words_posted[words_posted.length-1][item.length-1].toLowerCase();
+    var item =words_posted[words_posted.length-1]; 
+    var x1= item[item.length-1].toLowerCase();
     var x2= word[0].toLowerCase();
     var result = (x1===x2);
     //console.log(result);
