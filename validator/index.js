@@ -10,13 +10,9 @@ const checkNextWord = async(word)=>{
         });
         
     })
-    //console.log(words_posted);
-    var result = words_posted.some((item)=>{
-        var x1= item[item.length-1].toLowerCase();
-        var x2= word[0].toLowerCase();
-        //console.log(x1,' ',x2);
-        return (x1===x2); 
-    })
+    var x1= words_posted[words_posted.length-1][item.length-1].toLowerCase();
+    var x2= word[0].toLowerCase();
+    var result = (x1===x2);
     //console.log(result);
     return result;
 }
